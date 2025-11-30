@@ -1,4 +1,4 @@
-print("Welcome to our pizzare shit pizza's ")
+print("Welcome to our pizzare pizza's ")
 bill=0
 size=input("What size of pizza do you want? S M or L")
 peperoni=input("Do you want peperoni for your pizza")
