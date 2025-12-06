@@ -12,13 +12,14 @@ for i in range(word_length): #the i variable goes from the selected word from th
 
 print(placeholder)
 
+game_over=False
+while not game_over:
+    guess=input("Guess the letter :").lower()
+    display=""
+    for letter in chosen_word:
+        if guess == letter:
+            display+=letter
+        else:
+            display+="_"
 
-guess=input("Guess the letter :").lower()
-display=""
-for letter in chosen_word:
-    if guess == letter:
-        display+=letter
-    else:
-        display+="_ "
-
-print(display)
+    print(display)
