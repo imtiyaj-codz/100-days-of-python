@@ -20,6 +20,12 @@ while not game_over:
         if guess == letter:
             display+=letter
         else:
-            display+="_"
+            display+="_ "
 
     print(display)
+
+
+
+
+
+    
