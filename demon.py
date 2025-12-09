@@ -1,4 +1,7 @@
-def add(a, b):
-    return a + b
-sum = add(5, 10)
-print(sum)   # 15
+def total(*numbers):
+    print(sum(numbers))
+
+total(1, 2, 3, 4, 5)
+
+
+
