@@ -12,11 +12,18 @@
 
 # greet_with_name("Arbaz")
 
-def life_in_weeks():
-    years_total=90
-    age=int(input("Enter your age"))
-    calculate=years_total-age
-    x=calculate*52
-    print(f"you have {x} weeks left:")
-    
-life_in_weeks()
+# def life_in_weeks(age):
+#     years_total=90
+#     calculate=years_total-age
+#     x=calculate*52
+#     print(f"You have {x} weeks left.")
+
+# life_in_weeks(56)
+
+
+def greet_with_info(name,location):
+    print(f"Hello how is it going on : {name}")
+    print(f"What is it like in : {location}")
+# greet_with_info(f"imtiyaz","Kopargaon")
+greet_with_info(location="Kopargaon",name="Imtiyaz")
+
