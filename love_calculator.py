@@ -1,5 +1,4 @@
-print("Welcome to the love calculator\n")
+def greet(greeting):
+    return '{} Function'.format(greeting)
 
-def love_calculator(name1,name2):
-    print("")
-
+print(greet('Hi'))
