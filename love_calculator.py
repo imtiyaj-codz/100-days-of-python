@@ -1,4 +1,6 @@
-def greet(greeting):
-    return '{} Function'.format(greeting)
+names1="Arbaz"
 
-print(greet('Hi'))
+container=""
+
+
+
