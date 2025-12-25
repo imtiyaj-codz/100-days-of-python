@@ -1,7 +1,15 @@
-fruits=["Apple","Banana","Watermelon","Kiwi"]
+# fruits=["Apple","Banana","Watermelon","Kiwi"]
 
-for fruit in fruits:
-    print(fruit)
-    print(fruit+" pie")
+# for fruit in fruits:
+#     print(fruit)
+#     print(fruit+" pie")
 
-print(fruits)
+# print(fruits)
+
+def outer_function(a, b):
+    def inner_function(c, d):
+        return c + d
+    return inner_function(a, b)
+ 
+result = outer_function(5, 10)
+print(result)
