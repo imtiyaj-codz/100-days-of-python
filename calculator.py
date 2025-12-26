@@ -17,3 +17,8 @@ operations={
     "/":divide,
 }
 
+num1=input("Pick the first number")
+
+for symbol in operations:
+    
+operation_symbol=input("Pick an operation :\n +\n -\n *\n /")
