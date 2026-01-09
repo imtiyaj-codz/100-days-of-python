@@ -1,0 +1,41 @@
+Explain the topic: <Alternative Constructor>
+
+Follow this exact note-making structure:
+
+1. One-line definition  
+- Explain in very simple language (1–2 lines only)
+
+2. Why this topic exists (purpose)  
+- What problem does it solve?
+- Why do we need it?
+
+3. Where it is used (Data Analyst context)  
+- Real-world usage related to data analysis
+
+4. Core concepts / keywords  
+- List only important keywords (no explanations, no paragraphs)
+
+5. Syntax  
+- Show only the basic and most common syntax
+
+6. Simple example  
+- Very basic example to understand the concept
+- No complex logic
+
+7. Data Analyst example  
+- Practical example related to data, CSV, Pandas, analysis, or automation
+
+8. Common mistakes / confusions  
+- Mistakes beginners usually make
+
+9. Interview questions  
+- 2–3 commonly asked interview questions
+
+10. One-line summary  
+- Short memory-friendly conclusion
+
+Rules:
+- Avoid long paragraphs
+- Keep language simple
+- No unnecessary theory
+- Focus on clarity, revision, and interviews
