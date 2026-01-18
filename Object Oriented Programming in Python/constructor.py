@@ -16,3 +16,4 @@ class SalesRecord:
             payload["metrics"]["revenue"],
             payload["geo"]["region"]
         )
+
