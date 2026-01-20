@@ -12,14 +12,16 @@ class Employee():
     
     def apply_raise(self):
         self.pay = int(self.pay * self.raise_amount)
+    
+    @classmethod
+    def set_raise_amount(cls,amount):
+        cls.raise_amount = amount
 
 emp_1 = Employee("Alain", "Wesker", 50000)
 emp_2 = Employee("Serena", "Williams", 76000)
 
-print(emp_1.email)
-print(emp_2.email)
-print(emp_1.fullname())
 
-print(emp_1.pay)
-emp_1.apply_raise()
-print(emp_1.pay)
+Employee.set_raise_amount(1.05)
+print(Employee.raise_amount)
+print(emp_1.raise_amount)
+print(emp_2.raise_amount)
