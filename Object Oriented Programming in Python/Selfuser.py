@@ -1,5 +1,5 @@
 class BankAccount:
-    bank_name = "OpenAI Bank"
+    bank_name = "Federal Bank"
 
     def __init__(self, holder, balance=0):
         self.holder = holder
