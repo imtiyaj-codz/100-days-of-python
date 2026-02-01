@@ -24,6 +24,18 @@ class Developer(Employee):
         super().__init__(first ,last, pay)
         self.prog_lang = prog_lang
 
+class Manager(Employee):
+    def __init__(self,first,last,pay,employees=None):
+        super().__init__(first,last,pay)
+        if self.employees is None:
+            self.employees = []
+        else:
+            self.employees = employees
+    
+    def add_emp():
+
+
+
 dev_1 = Developer("Alain", "Wesker", 50000 , "Java")
 dev_2 = Developer("Serena", "Williams", 60000 , "Python")
 
