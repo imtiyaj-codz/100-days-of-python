@@ -34,22 +34,6 @@ where rental_date between
 select 
 count (*)
 from payment
-where (payment_date between '2020-01-26' and '2020-01-27')
-and
-amount between 1.99 and 3.99
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+where (amount between 1.99 and 3.99)
+and (payment_date between '2020-01-26' and '2020-01-28')
 
