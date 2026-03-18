@@ -14,15 +14,3 @@ select
 replace(cast(rating as text),'PG-13','PG-18')
 from film
 group by rating
-
-
-
-
-
-
-
-
-
-
-
-
