@@ -6,7 +6,7 @@
             "server": "localhost",
             "port": 1092,
             "driver": "PostgreSQL",
-            "name": "Postgres 18",
+            "name": "PostgreSQL18",
             "database": "postgres",
             "username": "postgres",
             "password": "1234"
