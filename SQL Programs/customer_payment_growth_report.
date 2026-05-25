@@ -1,0 +1,42 @@
+CREATE TABLE customers (
+    customer_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50)
+);
+
+CREATE TABLE payments (
+    payment_id INT PRIMARY KEY,
+    customer_id INT,
+    amount INT
+);
+
+INSERT INTO customers VALUES
+(1, 'Imtiyaz', 'Shaikh'),
+(2, 'Rahul', 'Patil'),
+(3, 'Sara', 'Khan');
+
+INSERT INTO payments VALUES
+(1, 1, 100),
+(2, 1, 300),
+(3, 1, 250),
+(4, 2, 200),
+(5, 2, 500),
+(6, 3, 400);
+
+SELECT
+    customers.first_name,
+    earlier_payment.payment_id AS earlier_payment_id,
+    earlier_payment.amount AS earlier_amount,
+    later_payment.payment_id AS later_payment_id,
+    later_payment.amount AS later_amount,
+    CASE
+        WHEN later_payment.amount > earlier_payment.amount THEN 'Growth'
+        ELSE 'No Growth'
+    END AS payment_trend
+FROM payments AS earlier_payment
+INNER JOIN payments AS later_payment
+ON earlier_payment.customer_id = later_payment.customer_id
+AND earlier_payment.payment_id < later_payment.payment_id
+INNER JOIN customers
+ON earlier_payment.customer_id = customers.customer_id
+WHERE later_payment.amount > earlier_payment.amount;
